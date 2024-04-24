@@ -25,6 +25,12 @@ const HeroBanner = () => {
       navigate(`/search/${query}`);
     }
   };
+ const  searchdata=(e)=>{
+  if(query.length > 0){
+    navigate(`/search/${query}`);
+  }
+  
+ }
 
   return (
     <div className="heroBanner">
@@ -52,7 +58,7 @@ const HeroBanner = () => {
                 onKeyUp={searchQueryHandler}
                 // The "Enter" key typically triggers the onKeyUp event when you release it after pressing.
               />
-              <button>Search</button>
+              <button onClick={searchdata}>Search</button>
             </div>
           </div>
         </div>
