@@ -39,9 +39,9 @@ const Footer = () => {
                     <span className="icon">
                         <FaTwitter />
                     </span>
-                    <span className="icon">
-                        <FaLinkedin />
-                    </span>
+                     <a href="https://www.linkedin.com/in/pankaj-kumar-b73393249" target="_blank" rel="noopener noreferrer">
+                  <FaLinkedin size={30} color="#0077b5" />
+                  </a>
                 </div>
             </ContentWrapper>
         </footer>
